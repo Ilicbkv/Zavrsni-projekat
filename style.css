@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  width: auto;
+  margin-bottom: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(220, 205, 146, 255);
+}
+
+.nav ul li a::after {
+  content: " ";
+  margin-left: 20px;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 255);
+  overflow: hidden;
+  border-bottom: solid #f8a510 4px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  align-items: end;
+  width: 700px 300px;
+  margin: auto;
+}
+
+.nav img {
+  width: 70px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.img-1 {
+  width: 100%;
+}
+
+.img-1 img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  min-width: 100px;
+  clip: rect(50px, 250px, 150px, 100px);
+}
+
+.sub-heading {
+  color: #f8a510;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: small;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.offer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+.small-img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.end-text {
+  font-style: italic;
+}
+
+.background-img {
+  width: 100%;
+  position: relative;
+  
+}
+
+.background-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  min-width: 100px;
+  border-top: solid #f8a510 4px;
+  margin-top: 35px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 180px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+    
+}
+
+.heading-3 {
+    text-transform: uppercase;
+}
+
+.btn-details {
+    height: 35px;
+    width: 80px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: solid black 2px;
+    border-left: solid darkgray 2px;
+    border-top: solid darkgrey 2px;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.venice {
+    background-image: url(Resursi/venice.jpg);
+    overflow: hidden;
+    height: 444px;
+    width: 300px;
+}
+
+.venice img {
+    height: 100%;
+    width: auto;
+}
+
