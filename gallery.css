@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  width: auto;
+  margin-bottom: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(220, 205, 146, 255);
+}
+
+.nav ul li a::after {
+  content: " ";
+  margin-left: 20px;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 255);
+  overflow: hidden;
+  border-bottom: solid #f8a510 4px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  align-items: end;
+  width: 700px 300px;
+  margin: auto;
+}
+
+.nav img {
+  width: 70px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.background-img {
+  width: 100%;
+  position: relative;
+}
+
+.background-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  min-width: 100px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+}
+
+.content {
+  text-align: left;
+}
+
+.text-box p {
+  text-align: left;
+}
+
+.heading-3 {
+  text-transform: uppercase;
+}
+
+.gallery-container {
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 15px;
+  
+}
+
+.gallery img {
+    object-fit: cover;
+    width: calc(25% - 15px);
+    height: calc(300px - 15px);
+  margin-top: 20px;
+
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .image-container img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 100%;
+  }
+  
+  .image-container input[type="file"] {
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .last {
+    position: absolute;
+    bottom: 80px;;
+    right: 150px;
+  }
+
+  .footer-style {
+    background-color: #f8a510;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 12px;
+    font-size: 13px;
+    color: white;
+  }
